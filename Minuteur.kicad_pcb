@@ -1649,6 +1649,7 @@
   (module SMD_perso:Resonator_SMD-3pin_3213 (layer F.Cu) (tedit 5936E280) (tstamp 5936E453)
     (at 130.81 115.57 270)
     (path /591E376A)
+    (attr smd)
     (fp_text reference Y1 (at 0 2.54 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -2027,6 +2028,7 @@
 
   (module Logos:Logo_labo_20mm (layer B.Cu) (tedit 5938829F) (tstamp 59E9CB5A)
     (at 120.904 117.602 180)
+    (attr smd)
     (fp_text reference REF** (at 0 -0.5 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )

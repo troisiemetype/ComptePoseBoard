@@ -39,14 +39,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Minuteur pour insoleuse"
+Date "2018-03-10"
+Rev "v1"
+Comp "le labo du troisième"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "distribué sous licence GNU GPL 3"
 $EndDescr
 $Comp
 L CONN_02X03 J1

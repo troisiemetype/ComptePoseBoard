@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/pierreloupm/Documents/Projets/Kicad/minuteur/Minuteur.sch)
-    (date "mar. 01 déc. 2020 19:43:13")
+    (date "mar. 01 déc. 2020 21:41:22")
     (tool "Eeschema 5.1.7-a382d34a8~87~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -827,7 +827,7 @@
     (net (code 35) (name A7)
       (node (ref U1) (pin 22))
       (node (ref J4) (pin 8)))
-    (net (code 36) (name BTN_1)
+    (net (code 36) (name BTN_2)
       (node (ref U1) (pin 2))
       (node (ref R10) (pin 1)))
     (net (code 37) (name +5V)
@@ -879,7 +879,7 @@
     (net (code 39) (name A6)
       (node (ref U1) (pin 19))
       (node (ref J4) (pin 7)))
-    (net (code 40) (name BTN_2)
+    (net (code 40) (name BTN_1)
       (node (ref R6) (pin 1))
       (node (ref U1) (pin 9)))
     (net (code 41) (name SCK)

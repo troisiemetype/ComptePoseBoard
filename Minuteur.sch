@@ -43,7 +43,7 @@ ENC_B
 Text GLabel 3150 3500 2    60   Input ~ 0
 ENC_A
 Text GLabel 3150 3800 2    60   Input ~ 0
-BTN_2
+BTN_1
 Text GLabel 3150 2500 2    60   Input ~ 0
 MAX_DATA
 Text GLabel 3150 2600 2    60   Input ~ 0
@@ -146,7 +146,7 @@ F 3 "" H 7250 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8500 4250 2    60   Input ~ 0
-BTN_1
+BTN_2
 $Comp
 L power:GND #PWR02
 U 1 1 591F645D
@@ -238,7 +238,7 @@ PIEZO_2
 Text GLabel 1350 5450 0    60   Input ~ 0
 PIEZO_1
 Text GLabel 3150 3700 2    60   Input ~ 0
-BTN_1
+BTN_2
 $Comp
 L power:GND #PWR021
 U 1 1 592A05EB
@@ -837,17 +837,6 @@ F 3 "https://www.fairchildsemi.com/datasheets/BC/BC818.pdf" H 8000 5900 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5EFB8BD6
-P 2050 5500
-F 0 "J3" H 2130 5492 50  0000 L CNN
-F 1 "piezo" H 2130 5401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2050 5500 50  0001 C CNN
-F 3 "~" H 2050 5500 50  0001 C CNN
-	1    2050 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:LD1117S50TR_SOT223 U2
 U 1 1 5EFBB817
 P 2800 6350
@@ -889,7 +878,7 @@ Wire Wire Line
 	3100 6350 3350 6350
 Connection ~ 3350 6350
 Text GLabel 6700 4150 2    60   Input ~ 0
-BTN_2
+BTN_1
 Connection ~ 3800 2650
 $Comp
 L power:+12V #PWR01
@@ -1176,4 +1165,15 @@ Wire Wire Line
 	1050 1700 1050 1600
 Wire Wire Line
 	1050 1600 1350 1600
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5EFB8BD6
+P 2050 5500
+F 0 "J3" H 2130 5492 50  0000 L CNN
+F 1 "piezo" H 2130 5401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2050 5500 50  0001 C CNN
+F 3 "~" H 2050 5500 50  0001 C CNN
+	1    2050 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

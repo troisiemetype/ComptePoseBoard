@@ -235,7 +235,7 @@ Text GLabel 3150 1600 2    60   Input ~ 0
 OUT_1
 Text GLabel 3150 1700 2    60   Input ~ 0
 PIEZO_2
-Text GLabel 1350 5450 0    60   Input ~ 0
+Text GLabel 1950 5400 0    60   Input ~ 0
 PIEZO_1
 Text GLabel 3150 3700 2    60   Input ~ 0
 BTN_2
@@ -283,7 +283,7 @@ F 3 "" H 2550 4300 50  0001 C CNN
 	1    2550 4300
 	1    0    0    -1  
 $EndComp
-Text GLabel 1350 5650 0    60   Input ~ 0
+Text GLabel 1950 5700 0    60   Input ~ 0
 PIEZO_2
 Wire Wire Line
 	5850 1700 5600 1700
@@ -384,20 +384,6 @@ Wire Wire Line
 	3150 2200 4950 2200
 Wire Wire Line
 	4950 2200 4950 2550
-Wire Wire Line
-	1350 5650 1800 5650
-Wire Wire Line
-	1800 5650 1800 5600
-Wire Wire Line
-	1800 5600 1850 5600
-Wire Wire Line
-	1350 5450 1450 5450
-Wire Wire Line
-	1750 5450 1800 5450
-Wire Wire Line
-	1800 5450 1800 5500
-Wire Wire Line
-	1800 5500 1850 5500
 Text GLabel 3150 1800 2    60   Input ~ 0
 PIEZO_1
 Text GLabel 3150 4000 2    60   Input ~ 0
@@ -686,7 +672,7 @@ L Device:R R8
 U 1 1 5EF4B2CE
 P 7200 5100
 F 0 "R8" H 7130 5054 50  0000 R CNN
-F 1 "1k" H 7130 5145 50  0000 R CNN
+F 1 "470" H 7130 5145 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7130 5100 50  0001 C CNN
 F 3 "~" H 7200 5100 50  0001 C CNN
 	1    7200 5100
@@ -726,17 +712,6 @@ F 3 "http://gfinder.findernet.com/assets/Series/353/S40EN.pdf" H 9300 5500 50  0
 	1    0    0    1   
 $EndComp
 Connection ~ 9100 5200
-$Comp
-L Device:R R1
-U 1 1 5EF81C42
-P 1600 5450
-F 0 "R1" V 1393 5450 50  0000 C CNN
-F 1 "470" V 1484 5450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1530 5450 50  0001 C CNN
-F 3 "~" H 1600 5450 50  0001 C CNN
-	1    1600 5450
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:C C5
 U 1 1 5EF86361
@@ -807,8 +782,8 @@ $Comp
 L Isolator:PC817 U4
 U 1 1 5EFADC83
 P 7500 5400
-F 0 "U4" H 7500 5725 50  0000 C CNN
-F 1 "PC817" H 7500 5634 50  0000 C CNN
+F 0 "U4" H 7300 5200 50  0000 C CNN
+F 1 "PC817" H 7600 5200 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 7300 5200 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 7500 5400 50  0001 L CNN
 	1    7500 5400
@@ -1166,14 +1141,31 @@ Wire Wire Line
 Wire Wire Line
 	1050 1600 1350 1600
 $Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5EFB8BD6
-P 2050 5500
-F 0 "J3" H 2130 5492 50  0000 L CNN
-F 1 "piezo" H 2130 5401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2050 5500 50  0001 C CNN
-F 3 "~" H 2050 5500 50  0001 C CNN
-	1    2050 5500
-	1    0    0    -1  
+L Device:R R1
+U 1 1 5EF81C42
+P 2250 5400
+F 0 "R1" V 2043 5400 50  0000 C CNN
+F 1 "1k" V 2134 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2180 5400 50  0001 C CNN
+F 3 "~" H 2250 5400 50  0001 C CNN
+	1    2250 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 5400 2600 5400
+Wire Wire Line
+	1950 5700 2600 5700
+Wire Wire Line
+	2100 5400 1950 5400
+$Comp
+L Chip_Perso:Piezo_sounder U6
+U 1 1 5FCD1C61
+P 2600 5550
+F 0 "U6" V 2547 5653 60  0000 L CNN
+F 1 "Piezo_sounder" V 2653 5653 60  0000 L CNN
+F 2 "IC_Perso:Murata_PKMCS0909_xxxxx" H 2600 5550 60  0001 C CNN
+F 3 "https://www.murata.com/en-us/products/sound/sounder/pkmcs" H 2600 5550 60  0001 C CNN
+	1    2600 5550
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

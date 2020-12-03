@@ -672,7 +672,7 @@ L Device:R R8
 U 1 1 5EF4B2CE
 P 7200 5100
 F 0 "R8" H 7130 5054 50  0000 R CNN
-F 1 "470" H 7130 5145 50  0000 R CNN
+F 1 "200" H 7130 5145 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7130 5100 50  0001 C CNN
 F 3 "~" H 7200 5100 50  0001 C CNN
 	1    7200 5100
@@ -777,17 +777,6 @@ F 2 "Diode_SMD:D_SOD-123" H 8600 5500 50  0001 C CNN
 F 3 "~" H 8600 5500 50  0001 C CNN
 	1    8600 5500
 	0    1    1    0   
-$EndComp
-$Comp
-L Isolator:PC817 U4
-U 1 1 5EFADC83
-P 7500 5400
-F 0 "U4" H 7300 5200 50  0000 C CNN
-F 1 "PC817" H 7600 5200 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 7300 5200 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 7500 5400 50  0001 L CNN
-	1    7500 5400
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R9
@@ -1042,21 +1031,21 @@ $EndComp
 Wire Wire Line
 	7200 5500 6800 5500
 Connection ~ 6800 5500
-Text GLabel 5200 6000 0    60   Input ~ 0
+Text GLabel 5200 6400 0    60   Input ~ 0
 A3
-Text GLabel 5200 6100 0    60   Input ~ 0
+Text GLabel 5200 6300 0    60   Input ~ 0
 A4
 Text GLabel 5200 6200 0    60   Input ~ 0
 A5
-Text GLabel 5200 6300 0    60   Input ~ 0
+Text GLabel 5200 6100 0    60   Input ~ 0
 A6
-Text GLabel 5200 6400 0    60   Input ~ 0
+Text GLabel 5200 6000 0    60   Input ~ 0
 A7
-Text GLabel 5200 5700 0    60   Input ~ 0
+Text GLabel 5200 5900 0    60   Input ~ 0
 D0
 Text GLabel 5200 5800 0    60   Input ~ 0
 D1
-Text GLabel 5200 5900 0    60   Input ~ 0
+Text GLabel 5200 5700 0    60   Input ~ 0
 D6
 $Comp
 L MCU_Microchip_ATmega:ATmega328P-AU U1
@@ -1167,5 +1156,16 @@ F 2 "IC_Perso:Murata_PKMCS0909_xxxxx" H 2600 5550 60  0001 C CNN
 F 3 "https://www.murata.com/en-us/products/sound/sounder/pkmcs" H 2600 5550 60  0001 C CNN
 	1    2600 5550
 	0    1    1    0   
+$EndComp
+$Comp
+L Isolator:LTV-817S U4
+U 1 1 5FCA56EC
+P 7500 5400
+F 0 "U4" H 7500 5600 50  0000 C CNN
+F 1 "LTV-817S" H 7500 5200 50  0000 C CNN
+F 2 "Package_DIP:SMDIP-4_W9.53mm" H 7500 5100 50  0001 C CNN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 7150 5700 50  0001 C CNN
+	1    7500 5400
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
